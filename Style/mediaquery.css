@@ -1,0 +1,135 @@
+@media screen and (max-width: 390px) {
+    /* .about .container  img{
+        min-width: 13rem;
+        min-height: 13rem;
+        border-radius: 50%;
+    } */
+
+    .about .container{
+        padding: none;
+        margin-right: 2rem;
+        
+    }
+    
+
+  }
+
+@media screen and (min-width : 820){
+    .container{
+        padding-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    .about .container{
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 2rem;
+    }
+
+    .about .flex-1{
+        align-items: center;
+        text-align: center;
+    }
+
+    .about .social{
+        display: flex;
+        justify-content: center;
+    } 
+
+    /* .hero{
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 2rem;
+    } */
+  }
+
+@media screen and (max-width: 540px) {
+    .hero .left img{
+        margin-bottom: 4.5rem;
+    }
+
+    .hero .right{
+        margin-bottom: 6rem;
+    }
+
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 97%, 0 100%);
+    }
+  }
+
+@media screen and (max-width: 796px) {
+    .contact .card-wrapper{
+        display: flex;
+        flex-wrap: wrap;   
+    }
+  }
+
+@media screen and (max-width: 1024px){
+    header #main-nav{
+        display: none;
+    }
+}
+
+/* hamberger icon's css. */
+
+.side-main-wap{
+    position: relative;
+}
+
+.hamberger{
+    position:absolute;
+    top: 60px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hamberger img{
+    width: 25px;
+}
+
+.mobile-nav{
+    padding-top: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--light);
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.times{
+    position: fixed;
+    top: 30px;
+    right: 25px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.times img{
+    width: 30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+
+.mobile-nav ul li a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 1.5rem;
+}

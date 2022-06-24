@@ -1,0 +1,523 @@
+/* import utilities.css */
+@import url(utilities.css);
+@import url(mediaquery.css);
+
+/* Color which we will used in our website */
+:root{
+    --primary:#3DCFD3;
+    --secondary:#070606;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    -webkit-font-smotthing:antialiased;
+}
+
+body{
+    font-family: 'Trirong' 'sans-serif';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background: url(../Images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 5rem;
+    margin: 0 auto;
+}
+
+.branding img{
+    height: 4rem;
+    border-radius: 50px;
+    margin-right: 1rem;
+
+}
+
+header nav .left a{
+    color: var(--light);
+    text-decoration: none;   /*for remove line in anchor tag*/
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3 ease;
+    font-weight: 600;
+}
+
+header nav .left a:hover{
+     color: var(--primary);
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+.branding{
+    margin-right: 3rem;
+}
+
+.hero .left img{
+    width: 21.15rem;
+}
+
+.hero .right{
+    color: var(--light);
+    margin-top: -5rem;
+}
+
+.hero .right h2{
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+.hero .right h4{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+section{
+    padding: 6rem 0;
+}
+ 
+.about h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration:double;
+}
+
+.about h1 span{
+    color: var(--primary);
+}
+
+.about h3{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.about p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.about .social{
+    display: flex;
+} 
+
+.about .container .flex-1 img{
+    max-width: 20rem;
+    max-height: 20rem;
+    border-radius: 50%;
+}
+
+.about .social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    margin-right: 0.6rem;
+}
+
+.about .social a img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 0.2rem;
+
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+section.services{
+    background: var(--light);
+}
+
+.services .card-wrapper{
+    margin-top: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services .card-wrapper .card img{
+    width: 5rem;
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+
+}
+
+section.services .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    max-width: 400px;
+    position: relative;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+
+section.services .card-wrapper .card a{
+    color: var(--primary);
+    margin-top: 1rem;
+}
+
+section.services .card-wrapper .card h2{
+    margin-bottom: 1rem;
+}
+
+section.services .card-wrapper .card p{
+    color: var(--ternary);
+}
+
+section.services .card-wrapper .card:hover{
+    background: var(--dark);
+}
+
+section.services .card-wrapper .card:hover h2{
+    color: var(--pure);
+}
+
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/camera.png);
+    color: var(--light);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding-bottom: 14rem;
+}
+
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'Lato' sans-serif;
+}
+
+section.review .slider{
+    margin-top: 4rem;
+}
+
+section.review .slider .slide img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+section.review .slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 12rem;
+}
+
+section.review .slider .slide p{
+    font-family: 'Lato' sans-serif;
+    color: var(--ternary);
+    margin-bottom: 1rem;
+    width: 300px;
+}
+
+/* for making slider div slide */
+
+section.review .slider-dots{
+    margin-top: 3rem;
+}
+
+section.review .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+section.review .slider-dots button{
+    font-size: 0;
+    width: 9px;
+    height: 6px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+section.review .dots li.slick-active button{
+    background: var(--primary);
+    width: 20px;
+}
+
+section.review .slider-next{
+    background-color: #070606;
+}
+
+section.work{
+    background: var(--light);
+}
+
+.work .container span{
+    color: var(--primary);
+}
+
+.work .container .card-wrapper{
+    grid-template-columns: repeat(3 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+    padding: 3rem;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+.work .container .card-wrapper .card{
+    position: relative;
+    height: 200px;
+}
+
+.work .container .card-wrapper .card img{
+    width: 100%;
+    height: 100%;
+}
+
+.work .container .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    background: rgba(61, 207, 211, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.work .container .card-wrapper .card .overlay a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.work .container .card-wrapper .card:hover .overlay{
+    opacity: 1;
+}
+
+.blog{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 96%, 0 100%);
+}
+
+.blog .section-heading{
+    color: var(--light);
+}
+
+.blog .container .card-wrapper{
+    /* display: grid; */
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-gap: 3rem;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.blog .card-wrapper .card{
+    background: var(--light);
+    max-width: 20rem;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.blog .card-wrapper .card .img-wrapper img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.blog .card-wrapper .card .card-content{
+    padding: 2rem;
+}
+
+.blog .card-wrapper .card .card-content h1{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.blog .card-wrapper .card .card-content a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.blog .card-wrapper .card .card-content a:hover{
+    color: var(--primary);
+}
+
+.blog .card-wrapper .card .card-content span{
+    color: var(--ternary);
+    font-size: 0.8rem;
+}
+
+.blog .card-wrapper .card .card-content p{
+    font-family: 'Lato', 'sans-serif';
+    color: var(--ternary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blog .card-wrapper .card .card-content a.read-more{
+    font-size: 0.8rem;   
+}
+
+.contact .card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 3rem;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    
+}
+
+.contact .card-wrapper .card{
+    max-width: 17rem;
+    text-align: center;
+    min-width: 17rem
+}
+
+.contact .card-wrapper .card img{
+    margin-top: 3rem;
+    max-height: 3rem;
+}
+
+.contact .card-wrapper .card h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+}
+
+.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--ternary);
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+.contact .input-wrap{
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact .input-wrap .line{
+    max-width: 15rem;
+}
+
+.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+}
+
+.contact input{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 1rem;
+}
+.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 1rem;
+}
+
+.contact .input-wrap-2 textarea:focus, .contact input:focus{
+    outline: none;
+}
+
+.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+footer a{
+    margin-right: 0.7rem;
+}
+
+footer a img{
+    width: 2rem;
+    background: var(--light);
+    border-radius: 50%;
+}
+
+footer .footer-socials{
+    margin-bottom: 1rem;
+}
+
+footer .footer-heading{
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+footer img{
+    width: 4rem;
+    border-radius: 50%;
+}
+
+footer .copyright-text{
+    color: var(--ternary);
+}
